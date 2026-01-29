@@ -4,6 +4,15 @@ import HouseCard from './HouseCard';
 const HouseListing = () => {
     const properties = [
         {
+            image: '/mykonos-villa.png',
+            title: 'Aegean Pearl Villa',
+            location: 'Mykonos, Greece',
+            price: '18,500,000',
+            beds: 8,
+            baths: 10,
+            area: '12,000'
+        },
+        {
             image: '/house-1.jpg',
             title: 'Celestial Heights Villa',
             location: 'Swiss Alps, Switzerland',
