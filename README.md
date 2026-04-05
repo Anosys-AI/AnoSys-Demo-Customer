@@ -1,7 +1,7 @@
-# Elysian Estates
+# Meridian Homes
 ## Luxury Real Estate Redefined
 
-Welcome to **Elysian Estates**, a premium digital showcase for luxury properties. This project is a tailored demonstration designed for **AnoSys.ai solutions**, highlighting how agentic AI and modern web technologies can transform the luxury real estate experience.
+Welcome to **Meridian Homes**, a premium digital showcase for luxury properties. This project is a tailored demonstration designed for **AnoSys.ai solutions**, highlighting how agentic AI and modern web technologies can transform the luxury real estate experience.
 
 ---
 
@@ -12,11 +12,11 @@ This repository serves as a live implementation of **AnoSys.ai** agentic capabil
 ### Key AI Implementations:
 - **Intelligent Chat Orchestration**: Integrated with `@openai/chatkit-react` to provide a premium, context-aware assistant for prospective buyers.
 - **Agentic Workflows**: Demonstrates how AnoSys.ai agents can handle complex property inquiries, schedule viewings, and provide instant architectural insights.
-- **Contextual Awareness**: The AI assistant is designed to understand the "Elysian Standard," ensuring every interaction feels as premium as the properties themselves.
+- **Contextual Awareness**: The AI assistant is designed to understand the "Meridian Standard," ensuring every interaction feels as premium as the properties themselves.
 
 ---
 
-## 🎨 Design Philosophy: "The Elysian Standard"
+## 🎨 Design Philosophy: "The Meridian Standard"
 
 The application features a "vibrant dark mode" aesthetic combined with modern glassmorphism, ensuring a high-fidelity visual experience that matches the exclusivity of the listings.
 

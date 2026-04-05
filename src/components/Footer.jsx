@@ -26,10 +26,10 @@ const Footer = () => {
                             marginBottom: '1.5rem'
                         }}>
                             <Home size={28} />
-                            <span>ELYSIAN</span>
+                            <span>MERIDIAN HOMES</span>
                         </div>
                         <p style={{ color: 'var(--text-muted)', maxWidth: '300px' }}>
-                            Elysian Estates is the global authority in luxury real estate, providing unparalleled service to the world's most discerning clients.
+                            Meridian Homes is the global authority in luxury real estate, providing unparalleled service to the world's most discerning clients.
                         </p>
                     </div>
                     <div>
@@ -82,7 +82,7 @@ const Footer = () => {
                     color: 'var(--text-muted)',
                     fontSize: '0.9rem'
                 }}>
-                    <p>© 2026 Elysian Estates. All rights reserved.</p>
+                    <p>© 2026 Meridian Homes. All rights reserved.</p>
                     <div style={{ display: 'flex', gap: '1.5rem' }}>
                         <Facebook size={18} />
                         <Twitter size={18} />
