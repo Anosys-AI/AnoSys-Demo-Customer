@@ -25,7 +25,7 @@ const Header = () => {
                     gap: '0.5rem'
                 }}>
                     <Home size={28} />
-                    <span>MERIDIAN HOMES</span>
+                    <span>APOGEE RESIDENCES</span>
                 </div>
                 <nav>
                     <ul style={{

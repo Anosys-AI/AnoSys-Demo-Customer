@@ -223,7 +223,7 @@ export function useChatObservability() {
         const script = document.createElement('script');
         script.src = "https://console.anosys.ai/scripts/imp1.0.min.js";
         script.async = true;
-        script.dataset.cid = "Meridian Homes";
+        script.dataset.cid = "Apogee Residences";
         script.dataset.appSession = correlationIds.appSessionId;
         script.dataset.anosysPixel = `${anoSysIngestionUrl}/anosys.gif`;
 
