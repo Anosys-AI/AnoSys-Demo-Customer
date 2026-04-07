@@ -13,6 +13,11 @@ This repository serves as a live implementation of **AnoSys.ai** agentic capabil
 - **Intelligent Chat Orchestration**: Integrated with `@openai/chatkit-react` to provide a premium, context-aware assistant for prospective buyers.
 - **Agentic Workflows**: Demonstrates how AnoSys.ai agents can handle complex property inquiries, schedule viewings, and provide instant architectural insights.
 - **Contextual Awareness**: The AI assistant is designed to understand the "Apogee Standard," ensuring every interaction feels as premium as the properties themselves.
+- **Observability & Analytics**: Integrated with **AnoSys Observability** to monitor LLM performance, track user actions, and gain deep insights into agentic workflows.
+
+### 📚 Observability Documentation:
+- **[Anosys Observability Report](file:///Users/moisisv/Projects/DemoCustomer/anosys_observability_report.md)**: A detailed breakdown of all variables, custom fields (CVS), and metrics sent to Anosys.
+- **[Anosys Setup Tutorial](file:///Users/moisisv/Projects/DemoCustomer/anosys_setup_tutorial.md)**: A step-by-step guide for developers to integrate and configure Anosys observability.
 
 ---
 
