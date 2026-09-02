@@ -17,6 +17,7 @@ export async function resolveAnoSysApiKey() {
         }
 
         const data = await response.json();
+        console.log('AnoSys API key resolved:', data);
         return { apiUrl: data.apiUrl, hook: data?.hook };
     } catch (error) {
         console.error('Error resolving AnoSys API key:', error);
@@ -221,7 +222,7 @@ export function useChatObservability() {
         if (!anoSysIngestionUrl) return;
 
         const script = document.createElement('script');
-        script.src = "https://console.anosys.ai/scripts/imp1.0.min.js";
+        script.src = "https://console.anosys.ai/scripts/imp-latest.min.js";
         script.async = true;
         script.dataset.cid = "Apogee Residences";
         script.dataset.appSession = correlationIds.appSessionId;
